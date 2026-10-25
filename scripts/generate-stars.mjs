@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 // Official HYG database from its author (David Nash, Astronexus), v4.1 - licensed CC BY-SA 4.0.
 // Pin HYG_COMMIT to the exact commit of github.com/astronexus/HYG-Database you downloaded from, so the
 // licence you checked is the licence of the data you shipped. (Commits page: /commits/main/hyg/CURRENT)
-const HYG_COMMIT = 'PASTE_HYG_COMMIT_HASH';
+const HYG_COMMIT = 'e4fd9c95381c6b5f34e465259cb4d2e1a7ff2e09';
 const HYG_FILE = 'hygdata_v41.csv';
 const UNPINNED = HYG_COMMIT.startsWith('PASTE_');
 const SOURCE_URL = `https://raw.githubusercontent.com/astronexus/HYG-Database/${UNPINNED ? 'main' : HYG_COMMIT}/hyg/CURRENT/${HYG_FILE}`;

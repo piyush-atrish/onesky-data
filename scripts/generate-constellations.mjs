@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 // Licence of that data (from the sky culture's own description.md): "Text and data: CC BY-SA 4.0".
 // Pin STELLARIUM_COMMIT to the exact commit of github.com/Stellarium/stellarium you checked, so the licence
 // you read is the licence of the data you shipped.
-const STELLARIUM_COMMIT = 'PASTE_STELLARIUM_COMMIT_HASH';
+const STELLARIUM_COMMIT = 'daace2add6a1bf886e8ee1934f51e9c69f818d18';
 const UNPINNED = STELLARIUM_COMMIT.startsWith('PASTE_');
 const SOURCE_URL = `https://raw.githubusercontent.com/Stellarium/stellarium/${UNPINNED ? 'master' : STELLARIUM_COMMIT}/skycultures/modern/index.json`;
 const OUTPUT_URL = process.env.OUT_DIR
